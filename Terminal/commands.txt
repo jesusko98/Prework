@@ -1,0 +1,55 @@
+----- Comandos -----------
+NM: Nombre de archivo
+ND: Nombre de directorio
+NR: Nombre de repositorio
+NU: Nombre de usuario git
+CG: Correo de git
+DR: Directorio de repositorio
+RM: Rama de repositorio
+------- Manejo de directorios -------
+Crear directorio:
+ mkdir ND
+Eliminar directorio:
+ rmdir ND
+Eliminar Directorios y archivos: 
+ rm -r ND
+
+------- Manejo de archivos ----------
+Crear archivos:
+ cat > NM
+Crear archivos:
+ touch NM
+Ver contenido de arhcivo:
+ cat NM
+Eliminar archivo:
+ rm NM
+
+------- Enrutado de archivo ---------
+Ir a ruta raiz:
+ cd ~
+Ir a una ruta:
+ cd ND
+Ver directorios y archivos:
+ ls
+
+------- Commandos GIT ---------------
+Crear arhicvo:
+ echo "# NR" >> NM
+Crear remositorio vacio:
+ git init
+Crear repositorio e incluir archivos: 
+ git init
+ git add .
+Agregar el primer commit:
+ git config --global user.email "CG"
+ git config --global user.name NU
+ git commit -m "first commit"
+Conectarse a repositorio:
+ git remote add origin DR
+Push a rama:
+ git push -u origin RM
+Agregar cambios:
+ git add .
+Hacer commit:
+ git commit -m "Commit"
+
